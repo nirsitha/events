@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>eb bill</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="./style.css">   
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="row bg-primary"  >
+        <div class="col-md-3  ">
+           <p class="text-primary">pppppppp<img src="./image/logo1.png" alt="" class=" " width="150"><h1></h1></p> 
+        </div>
+        <div class="col-md-5 mt-5 "> 
+          <h5 class="font-weight-bold bg-warning text-center p-3" style="font-family: 'Times New Roman', Times, serif;">TNEB ELECTRICITY BILL CALCULATION<span><i class="material-icons " style="color: rgb(8, 8, 8);" >bolt</i></span></h5>
+          
+        </div>
+        <div class="col-md-4"> 
+            <p class="text-primar"><img src="./image/bulb.jpg" alt="" class="float-right " width="260" height="170"></p> 
+        </div>
+    </div>
+    <div class="border border-light" id="a2">
+      <h5 class="text-center mt-3">BILL CALCULATOR</h5>
+      <div class="row col-md-11 ml-5" style="background-image: url(./image/ele.jpg); background-size: cover;">
+        <div class="col-md-6">
+        
+            <p class="ml-5 mt-4 text-center font-weight-bold">Tariff Check</p>
+        </div>
+        <div class="col-md-5">
+          <form action="">
+            <div class="form-group">
+              <!-- <label for="course">Select the course</label> -->
+              <select name="course" id="course" class="form-control mt-4 form-control-sm" required>
+                  <option value="">--Select the Tariff--</option>
+                  <option value="">Domestic</option>
+                  <option value="">Commercial</option>
+                  <!-- <option value="">Computer Graphics</option>
+                  <option value="">App Development</option> -->
+              </select>
+          </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+        
+          <p class="ml-5 text-center font-weight-bold">Billing Cycle</p>
+        </div>
+        <div class="col-md-5">
+        <form action="">
+          <div class="form-group">
+            <!-- <label for="course">Select the course</label> -->
+            <select name="course" id="course2" required>
+                <option value="">By Monthly</option>
+                
+                <option value="">Monthly</option>
+                
+            </select>
+        </div>
+        </form>
+      </div>
+      <!-- <div class="col-md-6">
+        <p class="ml-5 text-center font-weight-bold"> Contracted load(Not required for Domestic Tariff)</p>
+      </div>
+      <div class="col-md-4">
+        <form action="">
+          <div class="">
+            <input type="" class="form-control form-control-sm" id="get1" placeholder="">
+          </div>
+        </form>
+      </div> -->
+      <div class="col-md-6">
+        <p class="ml-5 text-center font-weight-bold"> Consumed Units</p>
+      </div>
+      <div class="col-md-4">
+        <form action="">
+          <div class="">
+            <input type="" class="form-control form-control-sm" id="get2" placeholder="">
+          </div>
+        </form>
+      </div>
+      <!-- <div class="col-md-6">
+        <p class="ml-5 text-center font-weight-bold"> KVAH(Not required for Domestic Tariff)</p>
+      </div>
+      <div class="col-md-4">
+        <form action="">
+          <div class="">
+            <input type="" class="form-control form-control-sm" id="get3" placeholder="">
+          </div>
+        </form>
+      </div> -->
+      <div class="col-md-5"> 
+        
+      </div>
+      <div class="col-md-6 mt-4">
+        <p><button type="button" class="btn btn-info " onclick="calculate()">Calculate..</button> </p> <br>      
+      </div>
+      <div class="col-md-4"> 
+        
+      </div>
+      <div class="col-md-4 mb-3">
+        <form action="">
+          <div class="">
+            <input type="" class="form-control form-control-sm" id="get4" placeholder="">
+          </div>
+        </form>
+      </div>
+      </div>
+      
+    </div>
+    
+    <div class="row mt-4 mr-5 ">
+      <div class="col-md-1 text-center p-2 ml-4 border border-light rounded rounded-pill mb-5 " id="a1">
+        <a href="./index.html" class="">Previouspage</a>
+      </div>
+      <div class="col-md-1 mt-2 "  >
+        <p class="text-white">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<a href="./index2.html" class="text-center p-2 border border-light  rounded rounded-pill mb-5" id="a1">NextPage..</a></p>
+      </div>
+    </div>
+   <!-- <p id="w"></p> -->
+    <script>
+     
+    function calculate()
+    {   
+      var units = parseInt(document.getElementById("get2").value);
+      var o=0;
+      var s=document.getElementById("course");
+      var t=s.options[s.selectedIndex];
+      if(t.text=="Commercial"){
+        
+        if (units <= 100)
+        {
+           o= units * 10;
+        }
+        else if (units <= 200)
+        {
+            o= (100 * 10)
+                + (units - 100)
+                      * 15;
+        }
+        else if (units <= 300)
+        {
+            o= (100 * 10)
+                + (100 * 15)
+                + (units - 200)
+                      * 20;
+        }
+        else if (units > 300)
+        {
+            o= (100 * 10)
+                + (100 * 15)
+                + (100 * 20)
+                + (units - 300)
+                      * 25;
+        }
+        
+        if (document.getElementById("course2").selectedIndex == 1) {
+            document.getElementById("get4").value = o;
+          }
+          else{
+            document.getElementById("get4").value = o*2;
+
+          }
+
+    }
+
+    else if (t.text=="Domestic") {
+      if(document.getElementById("course2").selectedIndex!=0)
+      {
+      alert("Domestic calculations happens bi-monthly");
+      document.getElementById("course2").selectedIndex=0;
+      }
+      if (units <= 100)
+        {
+           o= units * 0;
+        }
+        else if (units <= 200)
+        {
+            o= (100 * 0)
+                + (units - 100)
+                      * 1.5;
+        }
+        else if (units <= 300)
+        {
+            o= (100 * 0)
+                + (100 * 1.5)
+                + (units - 200)
+                      * 2.0;
+        }
+        else if (units > 300)
+        {
+            o= (100 * 0)
+                + (100 * 1.5)
+                + (100 * 2.0)
+                + (units - 300)
+                      * 2.5;
+        }
+        document.getElementById("get4").value=o;
+    } else {
+      document.getElementById("w").innerHTML="nothing selected";
+    }
+  }
+    
+    </script>
+  </body>
+</html>
